@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขายบ้านเดี่ยว/ทาวน์โฮม ม.พฤกษา 20 ลำลูกกา คลอง 2 | ราคาพิเศษ 2.45 ล้าน ฟรีโอน!</title>
+  <meta name="description" content="ขายทาวน์โฮมหลังใหญ่ หมู่บ้านพฤกษา 20 ลำลูกกา คลอง 3 (ทำเลคลอง 2) พื้นที่ 23.9 ตร.ว. 3 ห้องนอน 2 ห้องน้ำ บ้านหันหน้าทิศใต้ ต้นโครงการ ตรงข้ามสวนสาธารณะ ใกล้ BTS คูคต ยื่นกู้ฟรีพร้อมปรึกษาสินเชื่อฟรี">
+  <meta name="keywords" content="ขายบ้านลำลูกกา, พฤกษา 20, บ้านใกล้รถไฟฟ้า, คูคต, ทาวน์โฮมลำลูกกา, ขายทาวน์เฮ้าส์ลำลูกกา">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <nav class="navbar" id="main-nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo" id="nav-logo-link">
+        <span class="logo-accent">PRUKSA</span>20
+      </a>
+      
+      <div class="nav-right">
+        <!-- Live Visitor Badge in Navbar -->
+        <div class="nav-live-badge" id="nav-live-status">
+          <span class="live-dot"></span>
+          <span class="live-text"><strong id="nav-active-count">1</strong> คนกำลังชมเว็บนี้</span>
+        </div>
+        <a href="#inquiry" class="btn btn-primary btn-sm" id="nav-cta-btn">นัดชมบ้าน</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero-sec">
+    <div class="hero-overlay"></div>
+    <div class="hero-content-wrapper">
+      <div class="hero-badge" id="promo-badge">
+        <span class="badge-icon">🎁</span> จองตอนนี้ของแถมเพียบ!
+      </div>
+      
+      <h1 class="hero-title" id="main-hero-title">
+        บ้านหรูทำเลทอง <span class="text-gradient">ม.พฤกษา 20</span> ลำลูกกาคลองสาม
+      </h1>
+      
+      <p class="hero-subtitle" id="hero-description">
+        ทาวน์โฮมหลังมุม/ต้นโครงการ 23.9 ตร.ว. 3 นอน 2 น้ำ ตรงข้ามสวนสาธารณะ บรรยากาศร่มรื่น ใกล้รถไฟฟ้า BTS สถานีคูคต ยื่นกู้ฟรีทุกขั้นตอน
+      </p>
+
+      <!-- Promo Price Card -->
+      <div class="price-container" id="price-card">
+        <div class="price-old">ปกติ 2,650,000 บาท</div>
+        <div class="price-new">
+          <span class="price-label">ราคาพิเศษเพียง</span>
+          <span class="price-val">2,450,000</span>
+          <span class="price-unit">บาท</span>
+        </div>
+        <div class="price-meta">✨ รวมโอนทุกอย่างแล้ว ไม่ต้องจ่ายเพิ่ม!</div>
+      </div>
+
+      <!-- Urgency Banner / Countdown -->
+      <div class="urgency-banner" id="countdown-banner">
+        <div class="countdown-text">⏳ โควตาอัตราดอกเบี้ยพิเศษจำกัดเวลา</div>
+        <div class="countdown-timer" id="countdown-display">
+          <div class="timer-box">
+            <span class="timer-num" id="days">02</span>
+            <span class="timer-label">วัน</span>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-box">
+            <span class="timer-num" id="hours">14</span>
+            <span class="timer-label">ชม</span>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-box">
+            <span class="timer-num" id="minutes">32</span>
+            <span class="timer-label">นาที</span>
+          </div>
+          <div class="timer-sep">:</div>
+          <div class="timer-box">
+            <span class="timer-num" id="seconds">45</span>
+            <span class="timer-label">วิ</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-actions">
+        <a href="#inquiry" class="btn btn-gold btn-lg" id="hero-primary-btn">สนใจนัดชมบ้าน</a>
+        <a href="#details" class="btn btn-outline btn-lg" id="hero-secondary-btn">ดูรายละเอียดเพิ่มเติม</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Real-Time Stats Dashboard Section -->
+  <section class="stats-dashboard" id="live-dashboard">
+    <div class="container">
+      <div class="dashboard-header">
+        <h2 class="section-title text-center"><span class="live-dot-large"></span> สถิติการเข้าชมแบบเรียลไทม์ (Live Stats)</h2>
+        <p class="section-subtitle text-center">สถิติความสนใจบ้านหลังนี้จากผู้เข้าชมทั้งหมดบนระบบ ณ ขณะนี้</p>
+      </div>
+
+      <div class="stats-grid">
+        <!-- Card 1: Active Viewers -->
+        <div class="stat-card card-active" id="stat-card-active">
+          <div class="stat-icon-wrapper">👥</div>
+          <div class="stat-number" id="stats-active-users">--</div>
+          <div class="stat-title">ผู้สนใจเข้าชมขณะนี้ (คน)</div>
+          <div class="stat-description">กำลังเปิดหน้าเว็บและดูข้อมูลพร้อมกับคุณ</div>
+        </div>
+
+        <!-- Card 2: Total Views -->
+        <div class="stat-card" id="stat-card-views">
+          <div class="stat-icon-wrapper">👁️</div>
+          <div class="stat-number" id="stats-total-views">--</div>
+          <div class="stat-title">จำนวนยอดเข้าชมสะสม (ครั้ง)</div>
+          <div class="stat-description">จำนวนการแสดงผลหน้าเว็บทั้งหมด</div>
+        </div>
+
+        <!-- Card 3: Total Inquiries -->
+        <div class="stat-card" id="stat-card-inquiries">
+          <div class="stat-icon-wrapper">📞</div>
+          <div class="stat-number" id="stats-total-inquiries">--</div>
+          <div class="stat-title">ติดต่อขอยื่นกู้/ชมบ้านแล้ว (ครั้ง)</div>
+          <div class="stat-description">สิทธิ์จองนัดหมายปรึกษาวงเงินฟรี</div>
+        </div>
+      </div>
+
+      <!-- Activity Feed Ticker -->
+      <div class="activity-feed-wrapper" id="activity-feed-container">
+        <div class="activity-feed-header">
+          <span class="feed-badge">Live Activity</span>
+          <span class="feed-title">ความเคลื่อนไหวล่าสุดในระบบ</span>
+        </div>
+        <div class="activity-ticker" id="activity-ticker-list">
+          <!-- Live items will be injected by JavaScript -->
+          <div class="ticker-item placeholder-item">กำลังเชื่อมต่อระบบสถิติเรียลไทม์...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Gallery Section -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title text-center">ภาพถ่ายสถานที่จริง (Gallery)</h2>
+        <p class="section-subtitle text-center">สัมผัสความสวยงามของบ้าน ทัศนียภาพ และพื้นที่การตกแต่งภายในจริง</p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-image-grid">
+        <!-- Dynamic images will be loaded here by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Property Specs / Details Section -->
+  <section class="details-section" id="details">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title text-center">รายละเอียดตัวบ้านและข้อมูลทำเล</h2>
+        <p class="section-subtitle text-center">ข้อมูลสเปก โครงสร้าง และข้อมูลสิทธิ์ครอบครองเบื้องต้น</p>
+      </div>
+
+      <div class="details-grid">
+        <!-- Specs Column -->
+        <div class="specs-wrapper" id="specs-card-list">
+          <h3 class="subsection-title">📋 ข้อมูลตัวบ้าน</h3>
+          <ul class="specs-list">
+            <li class="spec-item" id="spec-village">
+              <span class="spec-icon">🏡</span>
+              <div class="spec-text">
+                <span class="spec-label">โครงการ / หมู่บ้าน</span>
+                <span class="spec-val">หมู่บ้านพฤกษา 20 ลำลูกกาคลองสาม</span>
+              </div>
+            </li>
+            <li class="spec-item" id="spec-area">
+              <span class="spec-icon">📐</span>
+              <div class="spec-text">
+                <span class="spec-label">ขนาดที่ดิน (พื้นที่)</span>
+                <span class="spec-val">23.9 ตร.ว. (ทาวน์โฮมหลังใหญ่พิเศษ)</span>
+              </div>
+            </li>
+            <li class="spec-item" id="spec-rooms">
+              <span class="spec-icon">🛏️</span>
+              <div class="spec-text">
+                <span class="spec-label">ฟังก์ชันห้อง</span>
+                <span class="spec-val">3 ห้องนอน 2 ห้องน้ำ 1 ที่จอดรถ</span>
+              </div>
+            </li>
+            <li class="spec-item" id="spec-address">
+              <span class="spec-icon">📍</span>
+              <div class="spec-text">
+                <span class="spec-label">เลขที่บ้าน / ซอย</span>
+                <span class="spec-val">เลขที่ 53/108 ต้นโครงการ ซอย 3/6</span>
+              </div>
+            </li>
+            <li class="spec-item" id="spec-direction">
+              <span class="spec-icon">🧭</span>
+              <div class="spec-text">
+                <span class="spec-label">ทิศทางหน้าบ้าน</span>
+                <span class="spec-val">บ้านหันหน้าทิศใต้ (รับลมธรรมชาติ อากาศถ่ายเทดี)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Highlights Column -->
+        <div class="highlights-wrapper" id="highlights-card-list">
+          <h3 class="subsection-title">✨ จุดเด่นทำเลและการคมนาคม</h3>
+          <div class="highlight-cards">
+            
+            <div class="hl-card" id="hl-gate">
+              <div class="hl-header">
+                <span class="hl-badge">จุดเด่น 1</span>
+                <h4>ต้นโครงการ เข้าออกสะดวก</h4>
+              </div>
+              <p class="hl-desc">อยู่ใกล้ทางเข้าหลักหมู่บ้านพฤกษา 20 ปลอดภัย เดินทางสะดวกสบาย ไม่ลึก ไม่เปลี่ยว</p>
+            </div>
+
+            <div class="hl-card" id="hl-park-opposite">
+              <div class="hl-header">
+                <span class="hl-badge">จุดเด่น 2</span>
+                <h4>ตรงข้ามสวนสาธารณะของหมู่บ้าน</h4>
+              </div>
+              <p class="hl-desc">เปิดประตูหน้าบ้านออกมาเจอพื้นที่สีเขียว ไม่มีบ้านหลังอื่นตรงข้ามมาบังลมหรือบังสายตา วิวส่วนตัวสงบเงียบ</p>
+            </div>
+
+            <div class="hl-card" id="hl-bts">
+              <div class="hl-header">
+                <span class="hl-badge">จุดเด่น 3</span>
+                <h4>ใกล้รถไฟฟ้า BTS สายสีเขียว คูคต</h4>
+              </div>
+              <p class="hl-desc">การเดินทางเข้าสู่ใจกลางกรุงเทพมหานครเป็นเรื่องง่ายและประหยัดเวลา ห่างจากสถานี BTS คูคต เพียงไม่กี่นาที</p>
+            </div>
+
+            <div class="hl-card" id="hl-shops">
+              <div class="hl-header">
+                <span class="hl-badge">จุดเด่น 4</span>
+                <h4>ใกล้แหล่งร้านอาหารและสิ่งอำนวยความสะดวก</h4>
+              </div>
+              <p class="hl-desc">ใกล้ตลาด ร้านค้า ร้านอาหาร ร้านสะดวกซื้อ ในชุมชนลำลูกกา คลอง 2 และคลอง 3 ตอบโจทย์การใช้ชีวิตครบครัน</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Loans and Guarantees Service Section -->
+  <section class="services-section" id="services">
+    <div class="container text-center">
+      <h2 class="section-title"><span class="text-gradient">ดูแลสินเชื่อให้ฟรี</span> ทุกธนาคาร</h2>
+      <p class="section-subtitle">ลดความกังวลเรื่องเอกสารและการอนุมัติ ด้วยทีมงานผู้เชี่ยวชาญส่วนตัว</p>
+      
+      <div class="services-grid">
+        <div class="service-card" id="svc-banks">
+          <div class="svc-icon">🏦</div>
+          <h4>ยื่นกู้บ้านฟรีทุกธนาคารชั้นนำ</h4>
+          <p>เราคัดเลือกข้อเสนอดอกเบี้ยที่ดีที่สุด และยื่นเอกสารให้กับธนาคารพาณิชย์ชั้นนำทุกแห่งโดยไม่มีค่าธรรมเนียม</p>
+        </div>
+
+        <div class="service-card" id="svc-end-to-end">
+          <div class="svc-icon">🤝</div>
+          <h4>บริการทุกขั้นตอนถึงวันโอน</h4>
+          <p>ทีมงานดูแลเดินเรื่องให้ทุกขั้นตอน ตั้งแต่วิเคราะห์ความสามารถการกู้ เตรียมเอกสาร ประเมินบ้าน จนถึงโอนกรรมสิทธิ์ ณ สำนักงานที่ดิน</p>
+        </div>
+
+        <div class="service-card" id="svc-no-charge">
+          <div class="svc-icon">💡</div>
+          <h4>ปรึกษาวงเงินยื่นกู้ฟรี 100%</h4>
+          <p>ไม่มีประวัติเครดิตบูโร หรือต้องการประเมินวงเงินก่อนยื่นจริง สามารถส่งข้อมูลปรึกษาเราก่อนเพื่อปรับเอกสารให้กู้ผ่านง่ายขึ้น</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Home Loan Calculator -->
+  <section class="calculator-section" id="calculator">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title text-center">เครื่องมือคำนวณวงเงินกู้และยอดผ่อนชำระ</h2>
+        <p class="section-subtitle text-center">คำนวณค่าผ่อนชำระรายเดือนคร่าวๆ เพื่อวางแผนทางการเงินอย่างถูกต้อง</p>
+      </div>
+
+      <div class="calculator-wrapper">
+        <div class="calc-inputs" id="loan-calculator-form">
+          <div class="form-group-calc">
+            <label for="input-price" class="calc-label">ราคาบ้านเดี่ยว (บาท)</label>
+            <input type="number" id="input-price" value="2450000" class="calc-input">
+          </div>
+
+          <div class="form-group-calc">
+            <label for="input-down" class="calc-label">เงินดาวน์ / ส่วนลดพิเศษ (บาท)</label>
+            <input type="number" id="input-down" value="0" class="calc-input">
+          </div>
+
+          <div class="form-group-calc">
+            <label for="input-interest" class="calc-label">อัตราดอกเบี้ยเริ่มต้น (% ต่อปี)</label>
+            <input type="number" step="0.1" id="input-interest" value="3.5" class="calc-input">
+          </div>
+
+          <div class="form-group-calc">
+            <label for="input-years" class="calc-label">ระยะเวลาในการกู้ (ปี)</label>
+            <select id="input-years" class="calc-input">
+              <option value="15">15 ปี (180 งวด)</option>
+              <option value="20">20 ปี (240 งวด)</option>
+              <option value="25">25 ปี (300 งวด)</option>
+              <option value="30" selected>30 ปี (360 งวด)</option>
+              <option value="35">35 ปี (420 งวด)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="calc-results" id="calculator-summary-card">
+          <h3 class="results-title">📊 สรุปยอดประเมินการกู้</h3>
+          <div class="results-grid">
+            <div class="result-box">
+              <div class="result-label">วงเงินกู้รวม</div>
+              <div class="result-number" id="calc-loan-amount">2,450,000</div>
+              <div class="result-unit">บาท</div>
+            </div>
+            
+            <div class="result-box highlighted-result">
+              <div class="result-label">ยอดผ่อนชำระรายเดือนประมาณ</div>
+              <div class="result-number" id="calc-monthly-pay">11,002</div>
+              <div class="result-unit">บาท / เดือน</div>
+            </div>
+          </div>
+          
+          <div class="result-notes">
+            * คำนวณเบื้องต้นด้วยอัตราดอกเบี้ยแบบคงที่ตลอดอายุสัญญา ยอดผ่อนชำระจริงอาจแตกต่างกันไปตามเงื่อนไขของแต่ละธนาคารและประวัติเครดิตของผู้กู้
+          </div>
+          
+          <button class="btn btn-gold btn-full" onclick="document.getElementById('inquiry').scrollIntoView({behavior: 'smooth'})">
+            ยื่นเอกสารสมัครสินเชื่อฟรี
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lead Form & Contact Section -->
+  <section class="inquiry-section" id="inquiry">
+    <div class="inquiry-background"></div>
+    <div class="container">
+      <div class="inquiry-box-grid">
+        <!-- Text Column -->
+        <div class="inquiry-info-column" id="contact-info-block">
+          <div class="promo-badge-glow">LIMITED OFFER</div>
+          <h2 class="section-title text-left">จองสิทธิ์ด่วน & ปรึกษาสินเชื่อฟรี</h2>
+          <p class="inquiry-text-desc">
+            หากคุณมีความสนใจในตัวบ้านเดี่ยว ม.พฤกษา 20 หรือต้องการตรวจสอบวงเงินที่สามารถกู้ได้ฟรี สามารถลงทะเบียนเพื่อรับบริการนัดชมบ้านจริงหรือยื่นสินเชื่อฟรีได้ทันที
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>เบอร์โทรติดต่อด่วน</strong>
+                <a href="tel:0855535755" class="contact-link">085-5535755 คุณกวาง</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <span class="contact-icon">💬</span>
+              <div>
+                <strong>LINE ID</strong>
+                <a href="https://line.me/ti/p/~Kwang1066" class="contact-link" target="_blank">Kwang1066</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="urgency-tip">
+            📌 <em>ขณะนี้มีผู้ยื่นประเมินวงเงินและคิวชมบ้านแล้ว 12 ท่าน ยอดจองเต็มโควตาเดือนนี้ใกล้สิ้นสุด รีบลงทะเบียนเพื่อรักษาสิทธิ์ของแถมรวมโอนฟรี!</em>
+          </div>
+        </div>
+
+        <!-- Form Column -->
+        <div class="inquiry-form-column" id="lead-capture-form">
+          <h3 class="form-title">📝 ลงทะเบียนติดต่อ</h3>
+          <p class="form-subtitle">กรอกรายละเอียดสั้นๆ เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชม.</p>
+          
+          <form id="contactForm" onsubmit="handleFormSubmit(event)">
+            <div class="form-group">
+              <label for="lead-name">ชื่อ-นามสกุล ของคุณ</label>
+              <input type="text" id="lead-name" placeholder="ตัวอย่าง: คุณสิริพงษ์ ใจดี" required class="form-input-element">
+            </div>
+
+            <div class="form-group">
+              <label for="lead-phone">เบอร์โทรศัพท์มือถือ</label>
+              <input type="tel" id="lead-phone" placeholder="ตัวอย่าง: 0897654321" required class="form-input-element" pattern="^0[0-9]{8,9}$">
+            </div>
+
+            <div class="form-group">
+              <label for="lead-loan">วงเงินกู้ที่คาดหวัง</label>
+              <select id="lead-loan" class="form-input-element">
+                <option value="full">กู้เต็ม 100% (2,450,000 บาท)</option>
+                <option value="partial">มีงบดาวน์บางส่วน (ต้องการกู้ 1.8 - 2.2 ล้าน)</option>
+                <option value="cash">ซื้อด้วยเงินสด (ไม่กู้ธนาคาร)</option>
+                <option value="unsure">ต้องการปรึกษาวงเงินกู้ก่อน (ยังไม่แน่ใจ)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-note">หมายเหตุ / ความต้องการเพิ่มเติม</label>
+              <textarea id="lead-note" rows="3" placeholder="ตัวอย่าง: สะดวกนัดชมวันเสาร์ช่วงบ่าย หรือสอบถามของแถมเพิ่ม..." class="form-input-element"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold btn-full btn-lg" id="submit-lead-button">
+              <span>🚀</span> ลงทะเบียนนัดหมายชมบ้านฟรี
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer class="main-footer" id="footer-sec">
+    <div class="container text-center">
+      <h3 class="footer-logo"><span class="logo-accent">PRUKSA</span>20</h3>
+      <p class="footer-tagline">บ้านเดี่ยว/ทาวน์โฮมทำเลดีตรงข้ามสวนสาธารณะ ของแถมจัดเต็ม ฟรีสินเชื่อและค่าโอน</p>
+      <div class="footer-disclaimer">
+        © 2026 Pruksa 20 Property. All rights reserved. ข้อมูลตามรายละเอียดจริงของทางโครงการ เลขที่ 53/108 ตำบลลำลูกกาคลองสาม อำเภอลำลูกกา ปทุมธานี
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal">
+    <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+    <div class="lightbox-admin-controls" style="position: absolute; top: 20px; left: 20px; display: flex; gap: 10px; z-index: 10010;">
+      <button id="lightbox-delete-btn" class="lightbox-delete-btn" style="display: none;" onclick="deleteCurrentImage()">🗑️ ลบรูปภาพ</button>
+      <button id="lightbox-edit-btn" class="lightbox-edit-btn" style="display: none;" onclick="openEditModal()">✏️ แก้ไขรูปภาพ</button>
+    </div>
+    <div class="lightbox-content-wrapper">
+      <img id="lightbox-img" src="" alt="ภาพขยาย">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+    <span class="lightbox-prev" onclick="changeLightboxImage(-1)">&#10094;</span>
+    <span class="lightbox-next" onclick="changeLightboxImage(1)">&#10095;</span>
+  </div>
+
+  <!-- Upload Photo Modal -->
+  <div id="upload-modal" class="upload-modal">
+    <div class="upload-modal-backdrop" onclick="closeUploadModal()"></div>
+    <div class="upload-modal-content">
+      <span class="upload-modal-close" onclick="closeUploadModal()">&times;</span>
+      <h3 class="upload-modal-title">📷 อัปโหลดรูปภาพใหม่</h3>
+      <p class="upload-modal-subtitle">ร่วมแบ่งปันภาพถ่ายเพื่อแสดงบนหน้าเว็บของโครงการ</p>
+      
+      <form id="uploadForm" onsubmit="handleUploadSubmit(event)">
+        <div class="upload-area" id="uploadArea" onclick="document.getElementById('imageInput').click()">
+          <input type="file" id="imageInput" name="images" accept="image/*" multiple style="display: none;" required onchange="handleFileSelect(event)">
+          <div id="upload-prompt">
+            <div class="upload-icon">📤</div>
+            <h4 class="upload-title">คลิกหรือลากไฟล์รูปภาพมาที่นี่ (เลือกได้หลายรูป)</h4>
+            <p class="upload-desc">รองรับไฟล์ JPG, PNG, WEBP ขนาดไม่เกิน 5MB</p>
+          </div>
+          <div class="upload-preview" id="uploadPreview" style="display: none;">
+            <div class="preview-grid" id="previewGrid"></div>
+            <button type="button" class="remove-preview-btn" onclick="removePreview(event)">✕</button>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="upload-title">ชื่อรูปภาพ / ห้อง (ไม่ระบุจะใช้ชื่อไฟล์)</label>
+          <input type="text" id="upload-title" placeholder="ตัวอย่าง: ห้องรับแขกปรับปรุงใหม่, ลานจอดรถหน้าบ้าน" class="form-input-element">
+        </div>
+
+        <div class="form-group">
+          <label for="upload-desc">รายละเอียดรูปภาพ (เลือกใส่ได้ตามต้องการ)</label>
+          <textarea id="upload-desc" rows="2" placeholder="ตัวอย่าง: ปูกระเบื้องใหม่ แข็งแรง ทนทาน..." class="form-input-element"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full" id="submit-upload-btn">
+          💾 อัปโหลดรูปภาพ
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Edit Photo Modal -->
+  <div id="edit-modal" class="upload-modal">
+    <div class="upload-modal-backdrop" onclick="closeEditModal()"></div>
+    <div class="upload-modal-content">
+      <span class="upload-modal-close" onclick="closeEditModal()">&times;</span>
+      <h3 class="upload-modal-title">✏️ แก้ไขข้อมูลรูปภาพ</h3>
+      <p class="upload-modal-subtitle">แก้ไขชื่อและคำอธิบายสำหรับแสดงผลในแกลเลอรี</p>
+      
+      <form id="editForm" onsubmit="handleEditSubmit(event)">
+        <input type="hidden" id="editImageId">
+        
+        <div class="form-group">
+          <label for="edit-title">ชื่อรูปภาพ / ห้อง (ใช้สำหรับการจัดกลุ่มอัลบั้ม)</label>
+          <input type="text" id="edit-title" required placeholder="ตัวอย่าง: ห้องรับแขกปรับปรุงใหม่, ลานจอดรถหน้าบ้าน" class="form-input-element">
+        </div>
+
+        <div class="form-group">
+          <label for="edit-desc">รายละเอียดรูปภาพ (เลือกใส่ได้ตามต้องการ)</label>
+          <textarea id="edit-desc" rows="3" placeholder="ตัวอย่าง: ตกแต่งสไตล์โมเดิร์น โทนอุ่น..." class="form-input-element"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="edit-image-file">เปลี่ยนไฟล์รูปภาพ (ปล่อยว่างหากใช้รูปเดิม)</label>
+          <input type="file" id="edit-image-file" name="imageFile" accept="image/*" class="form-input-element" onchange="handleEditFileSelect(event)">
+          <div id="edit-image-preview-container" style="margin-top: 10px; display: none;">
+            <p style="font-size: 0.8rem; color: var(--amber-light); margin-bottom: 5px;">รูปภาพใหม่ที่จะนำมาแทนที่:</p>
+            <img id="edit-image-preview" src="" style="max-width: 150px; border-radius: var(--radius-sm); border: 1px solid rgba(255,255,255,0.1);">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-gold btn-full" id="submit-edit-btn">
+          💾 บันทึกการแก้ไข
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
