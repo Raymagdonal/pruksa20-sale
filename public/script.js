@@ -710,14 +710,22 @@ function connectStatsStream() {
 }
 
 function updateStatsUI(active, views, inquiries) {
-  document.getElementById('nav-active-count').textContent = active;
-  document.getElementById('stats-active-users').textContent = active;
-  document.getElementById('stats-total-views').textContent = views.toLocaleString();
-  document.getElementById('stats-total-inquiries').textContent = inquiries.toLocaleString();
+  const navActive = document.getElementById('nav-active-count');
+  if (navActive) navActive.textContent = active;
+  
+  const activeUsers = document.getElementById('stats-active-users');
+  if (activeUsers) activeUsers.textContent = active;
+  
+  const totalViews = document.getElementById('stats-total-views');
+  if (totalViews) totalViews.textContent = views.toLocaleString();
+  
+  const totalInquiries = document.getElementById('stats-total-inquiries');
+  if (totalInquiries) totalInquiries.textContent = inquiries.toLocaleString();
 }
 
 function appendActivityItem(activity, prepend = true) {
   const ticker = document.getElementById('activity-ticker-list');
+  if (!ticker) return; // Exit if the ticker element was removed
   
   const placeholder = ticker.querySelector('.placeholder-item');
   if (placeholder) {
