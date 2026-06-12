@@ -286,10 +286,6 @@
           <div class="result-notes">
             * คำนวณเบื้องต้นด้วยอัตราดอกเบี้ยแบบคงที่ตลอดอายุสัญญา ยอดผ่อนชำระจริงอาจแตกต่างกันไปตามเงื่อนไขของแต่ละธนาคารและประวัติเครดิตของผู้กู้
           </div>
-          
-          <button class="btn btn-gold btn-full" onclick="document.getElementById('inquiry').scrollIntoView({behavior: 'smooth'})">
-            ยื่นเอกสารสมัครสินเชื่อฟรี
-          </button>
         </div>
       </div>
     </div>
@@ -299,24 +295,24 @@
   <section class="inquiry-section" id="inquiry">
     <div class="inquiry-background"></div>
     <div class="container">
-      <div class="inquiry-box-grid">
+      <div class="inquiry-box-grid" style="grid-template-columns: 1fr;">
         <!-- Text Column -->
-        <div class="inquiry-info-column" id="contact-info-block">
-          <div class="promo-badge-glow">LIMITED OFFER</div>
-          <h2 class="section-title text-left">จองสิทธิ์ด่วน & ปรึกษาสินเชื่อฟรี</h2>
-          <p class="inquiry-text-desc">
-            หากคุณมีความสนใจในตัวบ้านเดี่ยว ม.พฤกษา 20 หรือต้องการตรวจสอบวงเงินที่สามารถกู้ได้ฟรี สามารถลงทะเบียนเพื่อรับบริการนัดชมบ้านจริงหรือยื่นสินเชื่อฟรีได้ทันที
+        <div class="inquiry-info-column" id="contact-info-block" style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <div class="promo-badge-glow" style="margin: 0 auto 15px auto;">LIMITED OFFER</div>
+          <h2 class="section-title" style="text-align: center;">จองสิทธิ์ด่วน & ปรึกษาสินเชื่อฟรี</h2>
+          <p class="inquiry-text-desc" style="text-align: center; margin-bottom: 30px;">
+            หากคุณมีความสนใจในตัวบ้านเดี่ยว ม.พฤกษา 20 หรือต้องการตรวจสอบวงเงินที่สามารถกู้ได้ฟรี สามารถติดต่อเพื่อรับบริการนัดชมบ้านจริงหรือยื่นสินเชื่อฟรีได้ทันที
           </p>
 
-          <div class="contact-details">
-            <div class="contact-item">
+          <div class="contact-details" style="justify-content: center; gap: 40px; margin-bottom: 30px; flex-wrap: wrap;">
+            <div class="contact-item" style="text-align: left;">
               <span class="contact-icon">📞</span>
               <div>
                 <strong>เบอร์โทรติดต่อด่วน</strong>
                 <a href="tel:0855535755" class="contact-link">085-5535755 คุณกวาง</a>
               </div>
             </div>
-            <div class="contact-item">
+            <div class="contact-item" style="text-align: left;">
               <span class="contact-icon">💬</span>
               <div>
                 <strong>LINE ID</strong>
@@ -325,46 +321,9 @@
             </div>
           </div>
 
-          <div class="urgency-tip">
-            📌 <em>ขณะนี้มีผู้ยื่นประเมินวงเงินและคิวชมบ้านแล้ว 12 ท่าน ยอดจองเต็มโควตาเดือนนี้ใกล้สิ้นสุด รีบลงทะเบียนเพื่อรักษาสิทธิ์ของแถมรวมโอนฟรี!</em>
+          <div class="urgency-tip" style="text-align: center;">
+            📌 <em>ยอดจองเต็มโควตาเดือนนี้ใกล้สิ้นสุด รีบติดต่อเพื่อรักษาสิทธิ์ของแถมรวมโอนฟรี!</em>
           </div>
-        </div>
-
-        <!-- Form Column -->
-        <div class="inquiry-form-column" id="lead-capture-form">
-          <h3 class="form-title">📝 ลงทะเบียนติดต่อ</h3>
-          <p class="form-subtitle">กรอกรายละเอียดสั้นๆ เจ้าหน้าที่จะติดต่อกลับภายใน 24 ชม.</p>
-          
-          <form id="contactForm" onsubmit="handleFormSubmit(event)">
-            <div class="form-group">
-              <label for="lead-name">ชื่อ-นามสกุล ของคุณ</label>
-              <input type="text" id="lead-name" placeholder="ตัวอย่าง: คุณสิริพงษ์ ใจดี" required class="form-input-element">
-            </div>
-
-            <div class="form-group">
-              <label for="lead-phone">เบอร์โทรศัพท์มือถือ</label>
-              <input type="tel" id="lead-phone" placeholder="ตัวอย่าง: 0897654321" required class="form-input-element" pattern="^0[0-9]{8,9}$">
-            </div>
-
-            <div class="form-group">
-              <label for="lead-loan">วงเงินกู้ที่คาดหวัง</label>
-              <select id="lead-loan" class="form-input-element">
-                <option value="full">กู้เต็ม 100% (2,450,000 บาท)</option>
-                <option value="partial">มีงบดาวน์บางส่วน (ต้องการกู้ 1.8 - 2.2 ล้าน)</option>
-                <option value="cash">ซื้อด้วยเงินสด (ไม่กู้ธนาคาร)</option>
-                <option value="unsure">ต้องการปรึกษาวงเงินกู้ก่อน (ยังไม่แน่ใจ)</option>
-              </select>
-            </div>
-
-            <div class="form-group">
-              <label for="lead-note">หมายเหตุ / ความต้องการเพิ่มเติม</label>
-              <textarea id="lead-note" rows="3" placeholder="ตัวอย่าง: สะดวกนัดชมวันเสาร์ช่วงบ่าย หรือสอบถามของแถมเพิ่ม..." class="form-input-element"></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-gold btn-full btn-lg" id="submit-lead-button">
-              <span>🚀</span> ลงทะเบียนนัดหมายชมบ้านฟรี
-            </button>
-          </form>
         </div>
       </div>
     </div>
